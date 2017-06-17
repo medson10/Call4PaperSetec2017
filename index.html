@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Call 4 Papers - SETEC 2017</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lora" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Call 4 Papers</h1>
+    </header>
+    <section class="about">
+      <h2>Sobre a Semana da Tecnlogia</h2>
+      <p>A Semana da Tecnologia é um evento anual da Faculdade de Tecnologia de Sorocaba(FATEC), nele são
+        apresentados palestras e ministrados cursos sobre os assuntos de maior destaque no mercado. Este ano
+        será realizada a 24º edição do evento, sendo que será a segunda edição que está sendo organizada pelos
+        alunos do curso de Análise e Desenvolvimento de Sistemas.
+      </p>
+      <p>
+        Para saber mais entre no <a href="#"><i>site oficial do evento</i></a>
+      </p>
+    </section>
+
+    <section class="form">
+      <h2>Submeta a sua palestra</h2>
+      <form>
+        <h3>Palestrante</h3><br>
+        Nome<br><br>
+        <input type="text" name="nome" placeholder="Nome" required><br><br>
+        Email<br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        Empresa<br><br>
+        <input type="text" name="empresa" placeholder="Empresa" ><br><br>
+        Website<br><br>
+        <input type="url" name="website" placeholder="Website" ><br><br>
+        Biografia<br><br>
+        <textarea rows="5" name="biografia" placeholder="Biografia"></textarea><br><br>
+        Foto<br><br>
+        <input type="file" name="foto" placeholder="Foto" accept="image/*"><br><br>
+
+        <hr>
+
+        <h3>Palestra</h3><br>
+        Titulo<br><br>
+        <input type="text" name="titulo" placeholder="Titulo" required><br><br>
+        Assunto<br /><br>
+        <select class="select" name="assunto">
+          <option value="desenvolvimento">Desenvolvimento</option>
+          <option value="ux">UX</option>
+          <option value="design">Design</option>
+          <option value="devops">DevOps</option>
+        </select><br><br>
+        Descrição<br><br>
+        <textarea rows="5" name="descricao" placeholder="Descrição"></textarea><br><br>
+        Nivel<br /><br>
+        <select class="select" name="nivel">
+          <option value="iniciante">Iniciante</option>
+          <option value="intermediario">Intermediario</option>
+          <option value="avancado">Avançado</option>
+        </select><br><br>
+        <button class="button-submit" type="button" name="submit">Submeter Palestra</button>
+
+      </form>
+
+    </section>
+
+    <footer class="footer">
+      <a href="https://github.com/FatecSorocaba"><h3>Github - FATEC SOROCABA</h3></a>
+      <a href="#"><h3>SETEC - Site Oficial</h3></a>
+      <a href="http://www.fatecsorocaba.edu.br/"><h3>FATEC SOROCABA - Site Oficial</h3></a>
+    </footer>
+
+  </body>
+</html>

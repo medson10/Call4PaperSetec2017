@@ -1,0 +1,117 @@
+$background1: #9c27b0;
+$background2: #ab47bc;
+$transparency: 0.25;
+$inputInactive: rgba(171, 71, 188, 0.25);
+$inputActive: rgba(156, 39, 176, 0.35);
+$text-color: #424242;
+
+@mixin input-default {
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  width: 350px;
+  border-bottom: 3px solid $background2;
+  background: $inputInactive;
+  color: $text-color;
+  &:focus {
+    border-bottom: 3px solid $background1;
+    background:$inputActive;
+  }
+
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', serif !important;
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: 'Lato', sans-serif;
+  a {
+      text-decoration: none !important;
+  }
+  h2, h3 {
+    color: $background2;
+  }
+
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  h1 {
+    color: #FFF;
+  }
+  background-color: $background1;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: $text-color;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  color: $background2;
+  margin: 40px;
+  font-family: 'Lato', sans-serif;
+
+  hr {
+    width: 700px;
+  }
+
+  input {
+    @include input-default;
+    text-align: center;
+    height: 25px;
+  }
+
+  textarea {
+    @include input-default;
+    box-sizing: border-box;
+  }
+
+  select {
+    @include input-default;
+    text-align: center;
+    padding: 5px;
+    option {
+      text-align: center;
+    }
+
+  }
+
+}
+
+.button-submit {
+  background-color: $background1;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  h3 {
+    color: #FFF;
+  }
+  background-color: $background1;
+}
